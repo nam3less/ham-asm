@@ -1,48 +1,60 @@
-name:                HAM-ASM
+name:                ham-asm
 version:             0.1.0.0
-github:              "githubuser/HAM-ASM"
-license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2020 Author name here"
+github:              "nam3less/ham-asm"
+license:             bsd3
+author:              "Robin Beckmann"
+maintainer:          "robin.m.beckmann@gmail.com"
+copyright:           "2020 Robin Beckmann"
 
 extra-source-files:
-- README.md
-- ChangeLog.md
+- readme.md
+- changelog.md
 
-# Metadata used when publishing your package
-# synopsis:            Short description of your package
-# category:            Web
+# metadata used when publishing your package
+# synopsis:            short description of your package
+# category:            web
 
-# To avoid duplicated efforts in documentation and dealing with the
-# complications of embedding Haddock markup inside cabal files, it is
-# common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/HAM-ASM#readme>
+# to avoid duplicated efforts in documentation and dealing with the
+# complications of embedding haddock markup inside cabal files, it is
+# common to point users to the readme.md file.
+description:         please see the readme on github at <https://github.com/nam3less/ham-asm#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- megaparsec >= 8.0.0 && < 9
+- text
+- containers
+- optparse-applicative
 
 library:
   source-dirs: src
+  ghc-options:
+  - -wall
+  default-extensions:
+    - overloadedstrings
 
 executables:
-  HAM-ASM-exe:
-    main:                Main.hs
-    source-dirs:         app
+  ham-asm:
+    main: main.hs
+    source-dirs: app
     ghc-options:
+    - -static
     - -threaded
     - -rtsopts
-    - -with-rtsopts=-N
+    - -with-rtsopts=-n
+    - -wall
+    default-extensions:
+      - overloadedstrings
     dependencies:
-    - HAM-ASM
+    - ham-asm
 
 tests:
-  HAM-ASM-test:
-    main:                Spec.hs
+  ham-asm-test:
+    main:                spec.hs
     source-dirs:         test
     ghc-options:
     - -threaded
     - -rtsopts
-    - -with-rtsopts=-N
+    - -with-rtsopts=-n
     dependencies:
-    - HAM-ASM
+    - ham-asm
