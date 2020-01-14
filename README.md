@@ -119,3 +119,22 @@ mone = ffff
 cnt  = 8    -- display the eigth fibonnaci number.
 ```
 
+## Contribution
+I welcome contributions, as I am not a very good Haskell programmer. I saw this
+project as a chance to try it out on something a bit bigger the learning
+exercises.
+
+If you have feedback or ideas to make the code better, just open an issue, send
+me a mail or open a pull request. I would appreciate it.
+
+### Bug Reports
+If you want to report a bug, please open an issue with the following content.
+
+- The version you are using.
+- What should happen
+- What did happen
+- A `.asm` file containing just enough code to reproduce the errors.
+- The corresponding debugging file (the one with the extension `.txt`)
+
+If you don't follow these simple instructions, I'll probably still look into the
+bug, but it will definitly take me longer to fix it. 
