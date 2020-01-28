@@ -128,6 +128,10 @@ exercises.
 If you have feedback or ideas to make the code better, just open an issue, send
 me a mail or open a pull request. I would appreciate it.
 
+### TODO
+- Better error messages
+- Code Cleanups (this project was written by a Haskell newbie)
+
 ### Bug Reports
 If you want to report a bug, please open an issue with the following content.
 
