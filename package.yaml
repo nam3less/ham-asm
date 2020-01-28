@@ -38,6 +38,9 @@ executables:
     main: Main.hs
     source-dirs: app
     ghc-options:
+    - -static
+    - -optc-static
+    - -optl-static
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N

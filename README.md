@@ -7,10 +7,11 @@ corresponding CPU is build over the duration of the course.
 
 ## Compiling
 To compile the project you will need the programm `stack` installed on your
-system. Then just execute the command `stack build`. It will build the
-executable. To install it for usage, execute `stack install`. This command will
-build the executable and put it into `~/.local/bin/`. If the directory is in
-your PATH, the command `ham-asm` wil then be usable in the shell.
+system. Then just execute the command `stack build ham-asm:ham-asm`. It will
+build the executable. To install it for usage, execute 
+`stack install ham-asm:ham-asm`. This command will build the executable and put
+it into `~/.local/bin/`. If the directory is in your PATH, the command `ham-asm`
+will then be usable in the shell.
 
 ## Usage
 To assemble a given source file (ending in ".asm") use the command `ham-asm
