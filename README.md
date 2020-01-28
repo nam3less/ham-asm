@@ -1,11 +1,17 @@
 # HAM-ASM
 
-The programm ham-asm is a assembler for the HAM-Assembler of the University
+The programm ham-asm is a assembler for the HAM-Assembler of the Universität
 Osnabrück. The assembly language is used in the course 
 "Einführung in die Technische Informatik" of the university and the
 corresponding CPU is build over the duration of the course.
 
-## Compiling
+## Installation
+### Binary Installation
+On the Releases Page you will be able to download a precompiled executable for
+Linux x86_64. If you want to install the programm on another platform, please
+refer to the section about compiling.
+https://github.com/nam3less/ham-asm/releases
+### Compiling
 To compile the project you will need the programm `stack` installed on your
 system. Then just execute the command `stack build ham-asm:ham-asm`. It will
 build the executable. To install it for usage, execute 
@@ -143,3 +149,4 @@ If you want to report a bug, please open an issue with the following content.
 
 If you don't follow these simple instructions, I'll probably still look into the
 bug, but it will definitly take me longer to fix it. 
+
